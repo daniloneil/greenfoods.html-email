@@ -1,0 +1,424 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Russo+One&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Russo One"] {
+            font-family: 'Russo One', arial, sans-serif !important;
+        }
+
+        [style*="Raleway"] {
+            font-family: 'Raleway', arial, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .menu a {
+            color: #6c6c6c;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.28px;
+            text-decoration: none;
+        }
+
+        .menu td {
+            padding-left: 30px;
+        }
+
+        .headerTd {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .featuresTd {
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
+
+        .featuresTd p {
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.28px;
+        }
+
+        .blockqouteTd {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .blockTd p {
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.28px;
+        }
+
+        .blockTable td {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .blockTable {
+            border-top: 1px solid #e6e6e6;
+            border-left: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .author {
+            padding-top: 20px;
+        }
+
+        .author h3 {
+            margin-top: 20px;
+            color: #686868;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.56px;
+            margin-bottom: 5px;
+        }
+
+        .author p {
+            color: #8c8c8c;
+            font-size: 13px;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.52px;
+            margin: 0;
+        }
+
+        .footerTd {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .footer-menuTd {
+            padding-top: 60px;
+            padding-bottom: 35px;
+        }
+
+        .footer-menuTd a {
+            color: #bcc9dd;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.36px;
+            text-decoration: none;
+        }
+
+        .copyrightTd {
+            color: #bcc9dd;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.31px;
+        }
+
+        .copyrightTd a {
+            font-weight: 600;
+            text-decoration: none;
+            color: #bcc9dd;
+        }
+
+        @media (max-width: 870px) {
+            .table-850 {
+                width: 600px !important;
+            }
+
+            .table-600 {
+                width: 550px !important;
+            }
+
+            .blockTable {
+                width: 200px !important;
+            }
+
+            .blockTable p br {
+                display: none !important;
+            }
+
+            .featuresTd td {
+                display: block !important;
+                margin-bottom: 50px !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 400px !important;
+            }
+
+            .table-600 {
+                width: 320px !important;
+            }
+
+            .blockTd {
+                display: block !important;
+                margin-bottom: 50px !important;
+                padding: 0 !important;
+            }
+
+            .blockqouteTd tr {
+                display: block !important;
+            }
+
+            .blockTable {
+                width: 320px !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            .author {
+                width: 200px !important;
+            }
+
+            .logo {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+                width: 200px !important;
+                margin-bottom: 20px !important;
+            }
+
+            .menu {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .table-850 {
+                width: 300px !important;
+            }
+
+            .table-600 {
+                width: 260px !important;
+            }
+
+            .blockTable {
+                width: 260px !important;
+            }
+
+            .author {
+                width: 130px !important;
+            }
+
+            .blockqouteTd {
+                padding-top: 50px !important;
+                padding-bottom: 50px !important;
+            }
+
+            .footer-menuTd table {
+                width: 260px !important;
+            }
+
+            .menu td {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#F0F0F0;opacity:0;visibility:hidden;width:0;height:0;display:none;">HTML-EMAIL
+    </div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#F0F0F0">
+        <tr>
+            <td>
+                <table class="main table-850" cellpadding="0" cellspacing="0" width="850" align="center">
+                    <tr>
+                        <td height="30" width="850"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" class="headerTd">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="left" class="logo">
+                                        <span style="color: #9eda16; font-family: 'Russo One'; 
+                                        line-height: 0.5;">GREEN</span> <br />
+                                        <span style="color: #0e0e0e; font-family: 'Russo One'; 
+                                        line-height: 1;">FOODS</span>
+                                    </td>
+                                    <td align="right" class="menu">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td><a href="#"
+                                                        style="font-family: 'Russo One'; color: #9eda16;">Меню</a>
+                                                </td>
+                                                <td><a href="#"
+                                                        style="font-family: 'Russo One'; color: #0e0e0e;">Доставка</a>
+                                                </td>
+                                                <td><a href="#"
+                                                        style="font-family: 'Russo One'; color: #0e0e0e;">Контакты</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bannerTd">
+                            <a href="#">
+                                <img src="banner.png" alt="banner" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="featuresTd" bgcolor="#ffffff">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="fDish.png" alt="return" />
+                                        <p style="font-family: 'Russo One'; color: #0e0e0e;">
+                                            <b style="color: #9eda16;">Torino</b> <br /> Свежий листовой салат с
+                                            креветками <br />
+                                        </p>
+                                        <a href="#"
+                                            style="text-transform: uppercase; text-decoration: none; color: #9eda16; font-weight: 600;">Подробнее
+                                            &rarr;</a>
+                                    </td>
+                                    <td align="center">
+                                        <img src="sDish.png" alt="stopwatch" />
+                                        <p style="font-family: 'Russo One'; color: #0e0e0e;">
+                                            <b style="color: #9eda16;">Palermo</b> <br /> Салат из зеленой стручковой
+                                            фасоли <br />
+                                        </p>
+                                        <a href="#"
+                                            style="text-transform: uppercase; text-decoration: none; color: #9eda16; font-weight: 600;">Подробнее
+                                            &rarr;</a>
+                                    </td>
+                                    <td align="center">
+                                        <img src="tDish.png" alt="reminders" />
+                                        <p style="font-family: 'Russo One'; color: #0e0e0e;">
+                                            <b style="color: #9eda16;">Siracusa</b> <br /> Салат из капусты с крабовыми
+                                            палочками <br />
+                                        </p>
+                                        <a href="#"
+                                            style="text-transform: uppercase; text-decoration: none; color: #9eda16; font-weight: 600;">Подробнее
+                                            &rarr;</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blockqouteTd" bgcolor="#ffffff">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td class="blockTd" align="center" style="padding-right: 20px;">
+                                        <table style="width: 100%;" cellpadding="0" cellspacing="0" class="blockTable"
+                                            align="center" width="280">
+                                            <tr>
+                                                <td align="center">
+                                                    <p style="font-family: 'Raleway'; color: #0e0e0e;">
+                                                        Наши повара для приготовления изысканных блюд выбирают <br />
+                                                        исключительно свежие продукты. Уверены, Вы будете приятно
+                                                        удивлены <br /> изумительно вкусными салатами, сочетающими в
+                                                        себе
+                                                        множество различных <br /> вкусных ингредиентов: водорослей,
+                                                        сыра, икры, нежнейшего омлета, <br /> краба, лосося, хрустящих
+                                                        огурчиков и томатов. <br />
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="author" align="center" style="font-family: Arial, Helvetica, sans-serif, 'Raleway'; display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        margin: 0 auto;">
+                                        <img src="author_img.png" alt="author" />
+                                        <h3 style="color: #0e0e0e;">Василиса Игнатьева</h3>
+                                        <p>Шеф-повар</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footerTd" bgcolor="#9eda16">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                <tr>
+                                    <td class="footer-logo" align="center">
+                                        <a href="#">
+                                            <img src="bella-footer.png" alt="footer-logo" />
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-menuTd" align="center">
+                                        <table cellpadding="0" cellspacing="0" width="350" align="center">
+                                            <tr>
+                                                <td align="center"><a href="#"
+                                                        style="font-family: Arial, Helvetica, sans-serif, 'Raleway'; color: #ffffff;">О
+                                                        нас</a></td>
+                                                <td align="center"><a href="#"
+                                                        style="font-family: Arial, Helvetica, sans-serif, 'Raleway'; color: #ffffff;">Доставка</a>
+                                                </td>
+                                                <td align="center"><a href="#"
+                                                        style="font-family: Arial, Helvetica, sans-serif, 'Raleway'; color: #ffffff;">Кейтеринг</a>
+                                                </td>
+                                                <td align="center"><a href="#"
+                                                        style="font-family: Arial, Helvetica, sans-serif, 'Raleway'; color: #ffffff;">Контакты</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="copyrightTd" align="center"
+                                    style="font-family: 'Russo One'; color: #0e0e0e;">©
+                                        2020 GREENFOODS - Здоровая еда с доставкой на дом</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30" width="850"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
